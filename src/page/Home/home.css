@@ -1,0 +1,17 @@
+.home {
+    background-color: brown;
+}
+
+.ownimage {
+    clip-path: polygon(57% 0, 100% 10%, 69% 80%, 0 69%, 28% 0);
+}
+
+@media (max-width: 767px) {
+    .ownimage {
+        clip-path: polygon(25% 0, 100% 25%, 80% 100%, 0 85%);
+        position: absolute;
+        right: -50px;
+        min-width: 530px;
+        height: 380px;
+    }
+}

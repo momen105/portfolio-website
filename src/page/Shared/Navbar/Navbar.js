@@ -16,9 +16,8 @@ function Navbar() {
                     <li className='hidden font-bold md:block'>
                         <div className='flex gap-10 '>
                             <NavLink to='/' className='text-slate-200'><b>Home</b></NavLink>
+                            <NavLink to='/skills'>Skills</NavLink>
                             <NavLink to='/resume'>Resume</NavLink>
-                            <NavLink to='/resume'>Skills</NavLink>
-
                             <NavLink to='/projects'>Projects</NavLink>
                             <NavLink to='/studynote'>Study Note</NavLink>
                             <NavLink to='/article'>Article</NavLink>
@@ -46,6 +45,7 @@ function Navbar() {
                     <ul className='absolute mobile-menu w-full left-0 p-4 bg-black'>
                         <li className='font-semibold text-center divide-y divide-gray-600'>
                             <NavLink to='/' className='text-slate-200 '><b>Home</b></NavLink>
+                            <NavLink to='/skills'>Skills</NavLink>
                             <NavLink to='/resume'>Resume</NavLink>
                             <NavLink to='/projects'>Projects</NavLink>
                             <NavLink to='/studynote'>Study Note</NavLink>

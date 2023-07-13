@@ -8,6 +8,7 @@ import Projects from "../page/Projects/Projects"
 import Resume from "../page/Resume/Resume"
 import StudyNote from "../page/StudyNote/StudyNote"
 import ErrorPage from "../page/ErrorPage/ErrorPage";
+import Skills from "../page/Skills/Skills";
 
 export const router = createBrowserRouter([
     {
@@ -22,6 +23,8 @@ export const router = createBrowserRouter([
             { path: "/projects", element: <Projects /> },
             { path: "/resume", element: <Resume /> },
             { path: "/studynote", element: <StudyNote /> },
+            { path: "/skills", element: <Skills /> },
+
         ],
     },
 

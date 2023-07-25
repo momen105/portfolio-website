@@ -11,7 +11,7 @@ function Home() {
             </div>
             <div className='absolute md:w-[400px] w-[350px] md:left-[55%] left-6 bottom-28'><h1 className='text-slate-200 text-lg'> Hello, I'm <span className='text-[#4bffa5]'>Md.Nur-ul Momen Tohin</span>, Software Engineer and Backend Developer based in Python.</h1></div>
 
-            <div className='absolute left-6  md:left-1/2 md:-translate-x-1/2 md:bottom-0 bottom-4'>
+            <div className='absolute left-6 md:left-1/2 md:-translate-x-1/2 md:bottom-1 bottom-4'>
 
                 <p className='text-slate-200 text-4xl md:text-6xl font-semibold'>
                     <ReactTyped

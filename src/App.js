@@ -1,6 +1,6 @@
 import { RouterProvider } from "react-router-dom";
 import { router } from "./routes/Routes";
-import Loader from "./component/Loader/Loader"
+import Loader from "./component/Loader/Loader";
 import { useEffect, useState } from "react";
 
 function App() {

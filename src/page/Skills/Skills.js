@@ -32,7 +32,7 @@ function Skills() {
     // const handleMouseLeave = () => { setIsHovered(false); };
 
     return (
-        <div className='md:h-[400px] max-md:[550px] overflow-hidden overflow-y-auto w-3/4 mt-8 m-auto border border-gray-800 bg-black '>
+        <div className='md:h-[360px] max-md:[550px] overflow-hidden overflow-y-auto w-3/4 mt-8 m-auto border border-gray-800 bg-black '>
             <div className='md:flex p-8'>
                 <p className='text-stone-200 text-xl mb-4 font-bold md:w-[170px]' >Preferable :</p>
                 <div class="grid md:gap-4 max-md:gap-2 grid-cols-[repeat(auto-fill,minmax(50px,1fr))] w-full">

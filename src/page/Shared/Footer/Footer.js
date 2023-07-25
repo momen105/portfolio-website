@@ -4,8 +4,8 @@ import { FaLinkedinIn, FaFacebookF, FaGithub } from 'react-icons/fa';
 function Footer() {
     return (
         <div>
-            <div className='fixed md:bottom-16 bottom-6 md:left-12 left-6 md:text-base text-sm'>
-                <ul className='text-[#9D9D9D]'>
+            <div className='fixed md:bottom-16 bottom-6 md:left-12 left-6 md:text-base'>
+                <ul className='text-[#9D9D9D] text-[13px]'>
                     <li><a>E: momentohin02@gmail.com</a></li>
                     <li><a>T: +8801777305810</a></li>
 

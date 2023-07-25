@@ -1,8 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@300;400;500;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    background: #9D9D9D;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #4bffa5;
+    border-radius: 5px;
+}
+
+
+body {
+    @apply font-secondary
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    @apply font-primary
+}
 
 nav a {
     color: #9D9D9D;
@@ -25,4 +54,18 @@ nav ul li div a:hover {
     color: rgb(226 232 240);
 
 
+}
+
+.content-animate {
+    @apply animate-[content-animate_1s_ease-in-out]
+}
+
+@keyframes content-animate {
+    from {
+        @apply opacity-5
+    }
+
+    to {
+        @apply opacity-100
+    }
 }

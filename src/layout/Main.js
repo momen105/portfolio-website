@@ -4,20 +4,24 @@ import Footer from '../page/Shared/Footer/Footer'
 import { Outlet } from 'react-router-dom'
 
 function Main() {
-    // const [showFooter, setShowFooter] = useState(false);
-    // useEffect(() => {
-    //     const showFooterTimeout = setTimeout(() => {
-    //         setShowFooter(true);
-    //     }, 2000);
-    //     return () => clearTimeout(showFooterTimeout);
-    // }, []);
-
+    const [showFooter, setShowFooter] = useState(true);
+    useEffect(() => {
+        let timeoutId;
+        console.log(showFooter)
+        if (!showFooter) {
+          timeoutId = setTimeout(() => {
+            setShowFooter(true);
+          }, 2000);
+        }
+    
+        return () => clearTimeout(timeoutId);
+      }, [showFooter]);
     return (
         <div>
-            <Navbar />
+            <Navbar showFooter={showFooter} setShowFooter={setShowFooter}/>
             <Outlet />
-            <Footer />
-            {/* {console.log(props.data)} */}
+            {showFooter && <Footer />}
+           
         </div>
 
     )

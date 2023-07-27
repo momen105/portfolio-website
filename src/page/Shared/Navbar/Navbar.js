@@ -2,8 +2,9 @@ import { React, useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa"
 import { NavLink } from "react-router-dom";
 import Loader2 from '../../../component/Loader/Loader2';
-import Main from '../../../layout/Main'
-function Navbar() {
+
+function Navbar({showFoote,setShowFooter}) {
+
     const [open, setOpen] = useState(false);
     const [loading, setLoading] = useState(false);
 
@@ -11,10 +12,11 @@ function Navbar() {
         setOpen((prev) => !prev);
     }
     const handleNavLinkClick = () => {
+        setShowFooter(false)
         setLoading(true);
         setTimeout(() => {
             setLoading(false);
-        }, 1000);
+        }, 2000);
     };
 
     return (

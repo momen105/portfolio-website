@@ -2,7 +2,6 @@ import { React } from 'react'
 // import reactLotti from '../../assests/lotties/reactlottie.json'
 // import jsLottie from '../../assests/lotties/jslottie.json'
 // import PythonLotti from '../../assests/lotties/pythonlottie.json'
-import Lottie from 'react-lottie';
 import python from '../../assests/Logos/python.svg'
 import react from '../../assests/Logos/react.svg'
 import js from '../../assests/Logos/js.jpg'

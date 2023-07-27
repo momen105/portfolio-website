@@ -28,7 +28,6 @@ function Projects() {
             <div>
                 {activeProject === 'professional' ? <ProfessionalProjects /> : <PersonalProjects />}
             </div>
-
         </div>
     )
 }

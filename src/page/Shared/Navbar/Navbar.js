@@ -1,13 +1,27 @@
 import { React, useState } from 'react'
 import { FaBars, FaTimes } from "react-icons/fa"
 import { NavLink } from "react-router-dom";
+import Loader2 from '../../../component/Loader/Loader2';
+import Main from '../../../layout/Main'
 function Navbar() {
     const [open, setOpen] = useState(false);
+    const [loading, setLoading] = useState(false);
+
     const handleMenu = () => {
         setOpen((prev) => !prev);
     }
+    const handleNavLinkClick = () => {
+        setLoading(true);
+        setTimeout(() => {
+            setLoading(false);
+        }, 1000);
+    };
+
     return (
         <div>
+            {
+                loading ? <Loader2 /> : []
+            }
             <nav className='md:px-12 md:pt-10 md:pb-3 md:sticky md:top-0 md:z-50 md:bg-transparent max-md:hidden '>
                 <ul className='flex flex-row justify-between '>
                     <li>
@@ -16,12 +30,13 @@ function Navbar() {
                     <li className='hidden font-bold md:block'>
                         <div className='flex gap-10 '>
                             <NavLink to='/' className='text-slate-200'><b>Home</b></NavLink>
-                            <NavLink to='/skills'>Skills</NavLink>
-                            <NavLink to='/resume'>Resume</NavLink>
-                            <NavLink to='/projects'>Projects</NavLink>
-                            <NavLink to='/studynote'>Study Note</NavLink>
-                            <NavLink to='/article'>Article</NavLink>
-                            <NavLink to='/contacts'>Contacts</NavLink>
+                            <NavLink onClick={handleNavLinkClick} to='/skills'>Skills</NavLink>
+                            <NavLink onClick={handleNavLinkClick} to='/resume'>Resume</NavLink>
+                            <NavLink onClick={handleNavLinkClick} to='/projects'>Projects</NavLink>
+                            <NavLink to='/experience'>Experience</NavLink>
+                            {/* <NavLink to='/studynote'>Study Note</NavLink> */}
+                            {/* <NavLink to='/article'>Article</NavLink> */}
+                            <NavLink onClick={handleNavLinkClick} to='/contacts'>Contacts</NavLink>
                         </div>
                     </li>
                     {/* hamburger button */}
@@ -45,12 +60,13 @@ function Navbar() {
                     <ul className='absolute mobile-menu w-full left-0 p-4 bg-black'>
                         <li className='font-semibold text-center divide-y divide-gray-600'>
                             <NavLink to='/' className='text-slate-200 '><b>Home</b></NavLink>
-                            <NavLink to='/skills'>Skills</NavLink>
-                            <NavLink to='/resume'>Resume</NavLink>
-                            <NavLink to='/projects'>Projects</NavLink>
-                            <NavLink to='/studynote'>Study Note</NavLink>
-                            <NavLink to='/article'>Article</NavLink>
-                            <NavLink to='/contacts'>Contacts</NavLink>
+                            <NavLink onClick={handleNavLinkClick} to='/skills'>Skills</NavLink>
+                            <NavLink onClick={handleNavLinkClick} to='/resume'>Resume</NavLink>
+                            <NavLink onClick={handleNavLinkClick} to='/projects'>Projects</NavLink>
+                            <NavLink onClick={handleNavLinkClick} to='/experience'>Experience</NavLink>
+                            {/* <NavLink to='/studynote'>Study Note</NavLink>
+                            <NavLink to='/article'>Article</NavLink> */}
+                            <NavLink onClick={handleNavLinkClick} to='/contacts'>Contacts</NavLink>
                         </li>
                     </ul>
 

@@ -9,6 +9,7 @@ import Resume from "../page/Resume/Resume"
 import StudyNote from "../page/StudyNote/StudyNote"
 import ErrorPage from "../page/ErrorPage/ErrorPage";
 import Skills from "../page/Skills/Skills";
+import Experience from "../page/Experience/Experience";
 
 export const router = createBrowserRouter([
     {
@@ -24,6 +25,7 @@ export const router = createBrowserRouter([
             { path: "/resume", element: <Resume /> },
             { path: "/studynote", element: <StudyNote /> },
             { path: "/skills", element: <Skills /> },
+            { path: "/experience", element: <Experience /> },
 
         ],
     },

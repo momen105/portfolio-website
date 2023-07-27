@@ -1,0 +1,38 @@
+.circle {
+    display: block;
+    margin: auto;
+    width: 1vw;
+    height: 2vh;
+    border-radius: 50%;
+    background-color: #4bffa5;
+}
+
+.date {
+    @apply text-sm text-[#9D9D9D]
+}
+
+.designation {
+    @apply text-base text-[#4bffa5] uppercase;
+}
+
+.company {
+    @apply text-sm text-[#9D9D9D]
+}
+
+.logo {
+    @apply text-[#9D9D9D]
+}
+
+.experience-container {
+    @apply animate-[experience-container_3s_ease-in-out]
+}
+
+@keyframes experience-container {
+    from {
+        @apply h-0
+    }
+
+    to {
+        @apply h-[435px]
+    }
+}

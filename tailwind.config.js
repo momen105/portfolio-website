@@ -11,17 +11,10 @@ module.exports = {
         'secondary': ['Roboto']
       },
       colors: {
-        body: "#0C0C0C"
+        body: "#0C0C0C",
+        primary:"#4bffa5",
+        secondary:"#9D9D9D"
       },
-
-
-      // transitionTimingFunction: {
-      //   'in-expo': 'cubic-bezier(0.165,0.85,0.45,1)',
-      //   // 'out-expo': 'cubic-bezier(0.19, 1, 0.22, 1)',
-      // }
-      // [cubic-bezier(.165,0.85,0.45,1)]
-
-
     },
   },
   plugins: [],

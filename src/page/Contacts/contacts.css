@@ -1,0 +1,41 @@
+.icon{
+    @apply  text-2xl text-primary
+}
+.contacts-context{
+    @apply  border-gray-800 bg-body flex flex-col items-center p-4 gap-3
+}
+.name,
+.email,
+.message{
+    position: relative;
+    padding-bottom: 10px;
+}
+.input{
+    color: #9D9D9D;
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    outline:1px solid #9D9D9D;
+    background-color: transparent;
+    transition: outline-color 500ms;
+}
+
+.input:focus{
+    outline-color: #4bffa5;
+}
+.lable{
+ position: absolute;
+ top:0;
+ left: 0;
+ padding-inline: 5px;
+ translate: 10px 10px;
+ color: #9D9D9D;
+ transition: translate 500ms, scale 500ms ;
+}
+.input:focus + .lable{
+    padding-inline: 5px;
+    translate: 10px -14px;
+    scale: 0.8;
+    background: #000;
+    color: #4bffa5;
+}

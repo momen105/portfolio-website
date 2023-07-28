@@ -1,22 +1,17 @@
-.circle {
-    display: block;
-    margin: auto;
-    width: 1vw;
-    height: 2vh;
-    border-radius: 50%;
-    background-color: #4bffa5;
+.circle{
+    @apply block m-auto w-3 h-3 rounded-[50%] bg-primary
 }
 
 .date {
-    @apply text-sm text-[#9D9D9D]
+    @apply md:text-sm text-xs text-[#9D9D9D]
 }
 
 .designation {
-    @apply text-base text-[#4bffa5] uppercase;
+    @apply md:text-base text-sm text-[#4bffa5] uppercase;
 }
 
 .company {
-    @apply text-sm text-[#9D9D9D]
+    @apply md:text-sm text-xs text-[#9D9D9D]
 }
 
 .logo {

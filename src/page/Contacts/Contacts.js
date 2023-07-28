@@ -1,8 +1,20 @@
-import React from 'react'
+import {React,useRef} from 'react'
 import './contacts.css'
 import {FiMail} from 'react-icons/fi'
 import {FaLocationArrow,FaPhone,FaUserClock} from 'react-icons/fa'
+import emailjs from '@emailjs/browser';
+import { toast,Toaster } from "react-hot-toast";
 function Contacts() {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        emailjs.sendForm('service_22m9b9a', 'template_zrsjhon', form.current, 'Fw1f_xJxwO1izG14-');
+        e.target.reset();
+        toast.success("Your message sent successfully");
+    };
+
+
     return (
         <div className='md:flex m-auto mt-8 h-[62vh] bg-transparent w-[70vw] border border-gray-800 overflow-y-auto'>
             <div className='md:w-1/2 md:border-r md:border-gray-800 md:flex md:flex-col md:justify-between max-md:bg-body'>
@@ -34,20 +46,21 @@ function Contacts() {
                 </div>
             </div>
             <div className='md:w-1/2 bg-body p-10 max-md:pt-5'>
-                <form>
+            <Toaster />
+                <form ref={form} onSubmit={sendEmail}>
                     <div className='name'>
-                        <input type="text" id="name" name="name" className='input'></input>
-                        <label for="name" className='lable'>Name</label>
+                        <input ref={form} type="text" id="name" name="name" placeholder=" "/>
+                        <label for="name" >Name</label>
                     </div>
                     <div className='email'>
-                        <input type="text" id="email" name="email" className='input'></input>
-                        <label for="email" className='lable'>Email</label>
+                        <input type="email" id="email" name="email" placeholder=" " required/>
+                        <label for="email" >Email</label>
                     </div>
                     <div className='message'>
-                        <input type="text" id="message" name="message" className='input h-[20vh]'></input>
-                        <label for="message" className='lable'>Message</label>
+                        <textarea rows="6" id="message" name="message" placeholder=" "/>
+                        <label for="message" >Message</label>
                     </div>
-                    <button type='button' className='bg-primary w-1/2 block m-auto rounded-sm text-xl text-black' >Send</button>
+                    <button type="submit" value="Send"  className='bg-primary w-1/2 block m-auto rounded-sm text-xl text-black' >Send</button>
                 </form>
             </div>
         </div>

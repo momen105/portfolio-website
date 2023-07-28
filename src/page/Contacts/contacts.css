@@ -10,7 +10,7 @@
     position: relative;
     padding-bottom: 15px;
 }
-.input{
+input,textarea{
     color: #9D9D9D;
     width: 100%;
     padding: 10px;
@@ -18,12 +18,14 @@
     outline:1px solid #9D9D9D;
     background-color: transparent;
     transition: outline-color 500ms;
+    
 }
 
-.input:focus{
+textarea:is(:focus,:active),input:is(:focus,:active){
     outline-color: #4bffa5;
 }
-.lable{
+
+label {
  position: absolute;
  top:0;
  left: 0;
@@ -32,7 +34,12 @@
  color: #9D9D9D;
  transition: translate 500ms, scale 500ms ;
 }
-.input:focus + .lable{
+input:focus + 
+label,
+textarea:focus + label,
+input:not(:placeholder-shown) + label,
+textarea:not(:placeholder-shown) + label
+{
     padding-inline: 5px;
     translate: 10px -14px;
     scale: 0.8;

@@ -18,9 +18,9 @@ function Footer() {
                         <span className='block mr-2 h-16 w-px bg-[#9D9D9D]'></span>
                     </li>
                     <ul className='space-y-6 fixed md:absolute md:left-0 right-4 max-md:top-[700px]'>
-                        <li><a className='text-[#9D9D9D] text-xl'><FaLinkedinIn /></a></li>
-                        <li><a className='text-[#9D9D9D] text-xl'><FaFacebookF /></a></li>
-                        <li><a className='text-[#9D9D9D] text-xl'><FaGithub /></a></li>
+                        <li><a href='#' className='text-[#9D9D9D] text-xl'><FaLinkedinIn /></a></li>
+                        <li><a href='#' className='text-[#9D9D9D] text-xl'><FaFacebookF /></a></li>
+                        <li><a href='#' className='text-[#9D9D9D] text-xl'><FaGithub /></a></li>
                     </ul>
                 </ul>
             </div >

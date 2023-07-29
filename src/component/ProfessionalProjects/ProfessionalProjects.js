@@ -1,32 +1,82 @@
 import React from 'react'
-import productFiltering from '../../assests/images/projects/productFiltering.png'
-import searchEngine from '../../assests/images/projects/searchEngine.jpg'
-import dms from '../../assests/images/projects/dms.jpg'
-import bdNote from '../../assests/images/projects/bd_note.jpg'
+
+import school from '../../assests/images/projects/school.jpg'
+import hrm from '../../assests/images/projects/hrm.jpg'
+import hrm2 from '../../assests/images/projects/hrm-2.jpg'
+import menu from '../../assests/images/projects/menu.jpg'
+import door from '../../assests/images/projects/door.jpg'
+import restro from '../../assests/images/projects/restro.webp'
+import office from '../../assests/images/projects/office.jpg'
 
 function ProfessionalProjects() {
     return (
-        <div className='content-animate flex h-[450px] bg-body overflow-y-auto'>
+        <div className='content-animate flex h-[450px] border  border-gray-800 bg-body overflow-y-auto'>
             <div className='w-2/5'>
-                <div className='relative h-[40vh] p-10 border  border-gray-800'>
-                    <img className='w-full h-full filter brightness-[0.2]' src={searchEngine}></img>
+                <div className='relative h-[40vh] p-10 border-b border-gray-800 overflow-hidden group transition-all'>
+                    <img className='w-full h-full filter brightness-[0.2]' src={school}></img>
                     <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                        <p className='text-lg text-[#4bffa5]'>Search Engine</p>
+                        <p className='text-lg text-[#4bffa5]'>School Management System</p>
+                    </div>
+                    <div className='absolute -left-full -bottom-full h-full w-full bg-primary group-hover:bottom-0 group-hover:left-0 transition-all duration-1000'>
+                        
                     </div>
                 </div>
-                <div className='relative h-[40vh] p-10 border-b-[1px] border-x-[1px] border-gray-800'>
-                    <img className='w-full h-full filter brightness-[0.2]' src={dms}></img>
+                <div className='relative h-[40vh] p-10 border-b border-gray-800 overflow-hidden group transition-all'>
+                    <img className='w-full h-full filter brightness-[0.2]' src={door}></img>
                     <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                        <p className='text-lg text-[#4bffa5]'>Delivery Management System</p>
+                        <p className='text-lg text-[#4bffa5]'>Automated Door Open System</p>
                     </div>
+                    <div className='absolute -left-full -bottom-full h-full w-full bg-primary group-hover:bottom-0 group-hover:left-0 transition-all duration-1000'>
+                        
+                        </div>
+                </div>
+                <div className='relative h-[40vh] p-10 border-b border-gray-800 overflow-hidden group transition-all'>
+                    <img className='w-full h-full filter brightness-[0.2]' src={restro}></img>
+                    <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                        <p className='text-lg text-[#4bffa5]'>Restaurant Website</p>
+                    </div>
+                    <div className='absolute -left-full -bottom-full h-full w-full bg-primary group-hover:bottom-0 group-hover:left-0 transition-all duration-1000'>
+                        
+                        </div>
+                </div>
+                <div className='relative h-[40vh] p-10 border-b border-gray-800 overflow-hidden group transition-all'>
+                    <img className='w-full h-full filter brightness-[0.2]' src={office}></img>
+                    <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                        <p className='text-lg text-[#4bffa5]'>Corporate Website</p>
+                    </div>
+                    <div className='absolute -left-full -bottom-full h-full w-full bg-primary group-hover:bottom-0 group-hover:left-0 transition-all duration-1000'>
+                        
+                        </div>
                 </div>
             </div>
             <div className='w-3/5'>
-                <div className='relative p-10 border border-x-0 border-gray-800 border-b-[1px]'>
-                    <img className='h-[50vh] w-full filter brightness-[0.2]' src={bdNote}></img>
+                <div className='relative p-10 border-b border-l border-gray-800 overflow-hidden group transition-all'>
+                    <img className='h-[50vh] w-full filter brightness-[0.2]' src={hrm}></img>
                     <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
-                        <p className='text-lg text-[#4bffa5]'>BankNote Detaction</p>
+                        <p className='text-lg text-[#4bffa5]'>Human Resource Management One</p>
                     </div>
+                    <div className='absolute -left-full -bottom-full h-full w-full bg-primary group-hover:bottom-0 group-hover:left-0 transition-all duration-1000'>
+                        
+                        </div>
+                </div>
+                <div className='relative p-10 border-b border-l border-gray-800 overflow-hidden group transition-all'>
+                    <img className='h-[50vh] w-full filter brightness-[0.2]' src={hrm2}></img>
+                    <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                        <p className='text-lg text-[#4bffa5]'>Human Resource Management Two</p>
+                    </div>
+                    <div className='absolute -left-full -bottom-full h-full w-full bg-primary group-hover:bottom-0 group-hover:left-0 transition-all duration-1000'>
+                        
+                        </div>
+                </div>
+
+                <div className='relative p-10 border-l border-gray-800 overflow-hidden group transition-all'>
+                    <img className='h-[50vh] w-full filter brightness-[0.2]' src={menu}></img>
+                    <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
+                        <p className='text-lg text-[#4bffa5]'>Digital Menu</p>
+                    </div>
+                    <div className='absolute -left-full -bottom-full h-full w-full bg-primary group-hover:bottom-0 group-hover:left-0 transition-all duration-1000'>
+                        
+                        </div>
                 </div>
 
             </div>

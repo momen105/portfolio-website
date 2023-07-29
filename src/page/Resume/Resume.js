@@ -19,7 +19,7 @@ export const Resume = () => {
                         <p><span>Address : </span>Nikunja-2, Dhaka, Bangladesh</p>
                     </div>
                 </div>
-                <button class="md:m-0 block m-auto rounded-none w-40 p-2 mt-8 border-solid border-2 border-[#4bffa5] text-[#4bffa5] hover:bg-[#4bffa5] hover:text-black ">Download CV</button>
+                <a href='https://drive.google.com/file/d/1RCHlzpCbvwXCG4zy5aEddSJliNIUut3r/view?usp=drive_link' class="md:m-0 block text-center m-auto rounded-none w-40 p-2 mt-8 border-solid border-2 border-[#4bffa5] text-[#4bffa5] hover:bg-[#4bffa5] hover:text-black ">Download CV</a>
             </div>
         </div>
     )

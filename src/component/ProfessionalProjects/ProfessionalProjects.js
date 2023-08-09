@@ -10,8 +10,8 @@ import office from '../../assests/images/projects/office.jpg'
 
 function ProfessionalProjects() {
     return (
-        <div className='content-animate flex h-[450px] border  border-gray-800 bg-body overflow-y-auto'>
-            <div className='w-2/5'>
+        <div className='content-animate md:flex h-[450px] border  border-gray-800 bg-body overflow-y-auto'>
+            <div className='md:w-2/5 w-full'>
                 <div className='relative h-[40vh] p-10 border-b border-gray-800 overflow-hidden group transition-all'>
                 <div className='top-0 left-0 w-full h-0 bg-primary group-hover:h-4 transition-all duration-500'>
                 </div>
@@ -51,12 +51,12 @@ function ProfessionalProjects() {
                 
                 </div>
             </div>
-            <div className='w-3/5'>
+            <div className='md:w-3/5 w-full '>
                 <div className='relative p-10 border-b border-l border-gray-800 overflow-hidden group transition-all'>
                 <div className='top-0 left-0 w-full h-0 bg-primary group-hover:h-4 transition-all duration-500'>
 
                     </div>
-                    <img className='h-[50vh] w-full filter brightness-[0.2]' src={hrm}></img>
+                    <img className='md:h-[50vh] h-[30vh] w-full filter brightness-[0.2]' src={hrm}></img>
                     <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                         <p className='text-lg text-[#4bffa5]'>Human Resource Management One</p>
                     </div>
@@ -66,7 +66,7 @@ function ProfessionalProjects() {
                     <div className='top-0 left-0 w-full h-0 bg-primary group-hover:h-4 transition-all duration-500'>
 
                     </div>
-                    <img className='h-[50vh] w-full filter brightness-[0.2]' src={hrm2}></img>
+                    <img className='md:h-[50vh] h-[30vh] w-full filter brightness-[0.2]' src={hrm2}></img>
                     <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                         <p className='text-lg text-[#4bffa5]'>Human Resource Management Two</p>
                     </div>
@@ -76,7 +76,7 @@ function ProfessionalProjects() {
                     <div className='top-0 left-0 w-full h-0 bg-primary group-hover:h-4 transition-all'>
 
                 </div>
-                    <img className='h-[50vh] w-full filter brightness-[0.2]' src={menu}></img>
+                    <img className='md:h-[50vh] h-[30vh] w-full filter brightness-[0.2]' src={menu}></img>
                     <div className='absolute max-w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2'>
                         <p className='text-lg text-[#4bffa5]'>Digital Menu</p>
                     </div>

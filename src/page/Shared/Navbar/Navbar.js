@@ -14,6 +14,7 @@ function Navbar({showFoote,setShowFooter}) {
     const handleNavLinkClick = () => {
         setShowFooter(false)
         setLoading(true);
+        setOpen(false);
         setTimeout(() => {
             setLoading(false);
         }, 2000);

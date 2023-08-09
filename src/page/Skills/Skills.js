@@ -31,12 +31,12 @@ function Skills() {
     // const handleMouseLeave = () => { setIsHovered(false); };
 
     return (
-        <div className='md:h-[360px] max-md:[550px] overflow-hidden overflow-y-auto w-3/4 mt-8 m-auto border border-gray-800 bg-black '>
-            <div className='md:flex p-8'>
+        <div className='md:h-[360px]  h-[500px] overflow-hidden overflow-y-auto w-3/4 mt-8 m-auto border border-gray-800 bg-black '>
+            <div className='md:flex p-8 max-md:pb-0'>
                 <p className='text-stone-200 text-xl mb-4 font-bold md:w-[170px]' >Preferable :</p>
                 <div class="grid md:gap-4 max-md:gap-2 grid-cols-[repeat(auto-fill,minmax(50px,1fr))] w-full">
                     {/* {isHovered ? <span className='lottiehover bg-slate-100' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} ><Lottie options={{ animationData: PythonLotti }} /></span> : <img onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} src={python}></img>} */}
-                    <img src={python}></img>
+                    <img src={python}></img> 
                     <img src={django} ></img>
                     <img src={drf} ></img>
                     <img src={oop} ></img>
@@ -49,7 +49,7 @@ function Skills() {
                     <img src={websocket} ></img>
                 </div>
             </div >
-            <div className='md:flex p-8'>
+            <div className='md:flex p-8  max-md:pb-0'>
                 <p className='text-stone-200 text-xl mb-4 font-bold md:w-[170px]' >Comfortable : </p>
                 <div class="grid md:gap-4 max-md:gap-2 grid-cols-[repeat(auto-fill,minmax(50px,1fr))] w-full">
                     {/* {isHovered ? <span className='lottiehover bg-[#212121]' onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} ><Lottie options={{ animationData: jsLottie }} /></span> : <img onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave} src={js}></img>} */}

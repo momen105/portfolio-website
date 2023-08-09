@@ -11,7 +11,7 @@ function Projects() {
     };
     return (
         <div className='m-auto w-2/3 mt-8 '>
-            <div className='w-1/2 m-auto flex justify-center divide-x text-lg   divide-gray-800 border border-gray-800 bg-body mb-2'>
+            <div className='md:w-1/2 m-auto flex justify-center divide-x text-lg   divide-gray-800 border border-gray-800 bg-body mb-2'>
                 <button
                     className={activeProject === 'professional' ? 'text-[#4bffa5]' : 'text-[#9D9D9D]'}
                     onClick={() => handleProjectChange('professional')}

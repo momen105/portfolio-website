@@ -7,7 +7,7 @@
 }
 
 .designation {
-    @apply md:text-base text-sm text-[#4bffa5] uppercase;
+    @apply md:text-base text-xs text-[#4bffa5] uppercase;
 }
 
 .company {

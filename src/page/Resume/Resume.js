@@ -3,10 +3,10 @@ import './resume.css'
 import OwnImage from '../../assests/images/test.jpg';
 export const Resume = () => {
     return (
-        <div className='resume md:flex border border-gray-800 w-2/3 md:h-[350px] max-md:h-[700px] md:mt-8 md:pt-12  max-md:mt-8 m-auto bg-body'>
-            <img className='resumeimage md:h-[300px] md:w-[340px] h-[280px] md:mt-0 mt-10' src={OwnImage} />
+        <div className='resume md:flex border border-gray-800 w-2/3 md:h-[350px] h-[500px] md:mt-8 md:pt-12  max-md:mt-8 m-auto bg-body'>
+            <img className='resumeimage md:h-[300px] md:w-[340px] h-[200px] md:mt-0 mt-10' src={OwnImage} />
             <div>
-                <p className='text-[#9D9D9D] text-justify md:w-11/12 md:p-0 p-4 '>
+                <p className='text-[#9D9D9D] text-justify md:w-11/12 md:p-0 p-3 text-sm md:text-base'>
                     This is Md. Nur-Ul Momen Tohin. I’m very proficient in programming language Python. I will be able to utilize my
                     knowledge and handles complex project management & coordinate work very efficiently to deliver results.
                 </p>

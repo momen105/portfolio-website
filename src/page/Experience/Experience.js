@@ -12,23 +12,23 @@ function Experience() {
                 </div>
                 <span className='block m-auto h-[10vh] w-[0.1vw] bg-[#9D9D9D]'></span>
                 <span class="circle"></span>
-                <div className='absolute md:w-[25vw] md:h-[13vh] p-3 top-[25%] md:left-[51%] left-[52%] bg-body border border-gray-800'>
+                <div className='absolute md:w-[25vw] md:h-[13vh] p-3 top-[25%] md:right-[51%] right-[52%] bg-body border border-gray-800'>
                     <span className='flex gap-2'><p className='logo'><BiSolidTimeFive /></p><p className='date'> 12/02/2023 - present</p></span>
-                    <span className='flex gap-2'><p className='logo'><FaUserTie /> </p><p className='designation'>Software Engineer (Backend)</p></span>
+                    <span className='flex gap-2 pt-1'><p className='logo'><FaUserTie /> </p><p className='designation'>Software Engineer (Backend)</p></span>
                     <span className='flex gap-2'><p className='logo'>< HiBuildingOffice /> </p> <p className='company'>Nexa Global Holdings Limited</p></span>
                 </div>
                 <span className='block m-auto h-[15vh] w-[0.1vw] bg-[#9D9D9D]'></span>
                 <span class="circle"></span>
-                <div className='absolute md:w-[25vw] md:h-[13vh] p-3 top-[50%] md:right-[51%] right-[52%] bg-body border border-gray-800 '>
+                <div className='absolute md:w-[25vw] md:h-[13vh] p-3 top-[50%]  md:left-[51%] left-[52%] bg-body border border-gray-800 '>
                     <span className='flex gap-2'><p className='logo'><BiSolidTimeFive /></p><p className='date'> 08/05/2022 - 09/02/2023 </p></span>
-                    <span className='flex gap-2'><p className='logo'><FaUserTie /> </p><p className='designation'>Backend Developer (Django)</p></span>
+                    <span className='flex gap-2 pt-1'><p className='logo'><FaUserTie /> </p><p className='designation'>Backend Developer (Django)</p></span>
                     <span className='flex gap-2'><p className='logo'>< HiBuildingOffice /> </p> <p className='company'>Nexis Limited</p></span>
                 </div>
                 <span className='block m-auto h-[15vh] w-[0.1vw] bg-[#9D9D9D]'></span>
                 <span class="circle"></span>
-                <div className='absolute md:w-[25vw] md:h-[13vh] p-3 top-[75%] md:left-[51%] left-[52%] bg-body border border-gray-800 '>
+                <div className='absolute md:w-[25vw] md:h-[13vh] p-3 top-[75%] md:right-[51%] right-[52%] bg-body border border-gray-800 '>
                     <span className='flex gap-2'><p className='logo'><BiSolidTimeFive /></p><p className='date'> 01/01/2022 - 31/04/2022 </p></span>
-                    <span className='flex gap-2'><p className='logo'><FaUserTie /> </p><p className='designation'>Django Developer (Intern)</p></span>
+                    <span className='flex gap-2 pt-1'><p className='logo'><FaUserTie /> </p><p className='designation'>Django Developer (Intern)</p></span>
                     <span className='flex gap-2'><p className='logo'>< HiBuildingOffice /> </p> <p className='company'>Mechanic koi PVT.LTD</p></span>
                 </div>
                 <span className='block m-auto h-[15vh] w-[0.1vw] bg-[#9D9D9D]'></span>
